@@ -1,0 +1,159 @@
+.title {
+    color: red;
+}
+
+
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: #FCF2F3;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+}
+
+.card-body {
+    width: 50%;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.parallax {
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.content {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.container-pink {
+    background-color: pink;
+}
+
+
+/* Portfolio */
+
+.portfolio-header-2 {
+    background-color: #FCF2F3;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container {
+    /* height: 1000px; */
+    width: 100%;
+    padding: 32px;
+
+    /* background-color: white; */
+}
+
+.protfolio-nav-header {
+    background-color: #FCF2F3;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    padding-top: 16px;
+    padding-left: 32px;
+    width: 300px
+}
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.get-in-touch-button {
+    margin-top: 16px;
+}
+
+
+
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.portfolio-footer-title {
+    font-size: 16px;
+}
+
+
+.portfolio-footer-getintouch {
+    text-align: left;
+}
+
+
+.portfolio-footer-otroslinks {
+    text-align: left;
+}
+
+
+.portfolio-footer {
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.portfolio-image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 16px;
+    margin: 16px;
+}
+
+a {
+    color: black;
+    /* Cambiar a cualquier color que desees */
+    text-decoration: none;
+    /* Para eliminar el subrayado predeterminado */
+}
+
+/* Estilos adicionales si lo necesitas */
+a:hover {
+    color: darkgray;
+    /* Cambia el color cuando el enlace se pasa por encima */
+}
