@@ -103,7 +103,10 @@
         width: 180px !important;
         padding-left: 40px;
     }
+}
 
+@media screen and (max-width: 768px) {
+    /* Cambiar el ancho del logo en pantallas más pequeñas */
     .portfolio-image {
         width: 270px !important;
     }
