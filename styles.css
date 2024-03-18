@@ -93,7 +93,7 @@
 .logo {
     padding-top: 16px;
     padding-left: 32px;
-    width: 300px
+    width: 300px;
 }
 
 
@@ -153,11 +153,6 @@
 
 .portfolio-image {
     width: 250px;
-    /* width: 150px;
-    height: 150px;
-    border: 2px solid black;
-    padding: 16px;
-    margin: 16px; */
 }
 
 a {
