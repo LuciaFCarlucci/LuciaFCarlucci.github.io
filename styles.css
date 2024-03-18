@@ -98,12 +98,17 @@
 
 
 @media screen and (max-width: 768px) {
-
     /* Cambiar el ancho del logo en pantallas más pequeñas */
     .logo {
-        width: 200px;
+        width: 180px !important;
+        padding-left: 40px;
+    }
+
+    .portfolio-image {
+        width: 270px !important;
     }
 }
+
 
 .row {
     padding: 0 !important;
@@ -147,11 +152,12 @@
 
 
 .portfolio-image {
-    width: 150px;
+    width: 250px;
+    /* width: 150px;
     height: 150px;
     border: 2px solid black;
     padding: 16px;
-    margin: 16px;
+    margin: 16px; */
 }
 
 a {
