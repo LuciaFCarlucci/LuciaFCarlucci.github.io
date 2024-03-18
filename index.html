@@ -16,9 +16,20 @@
 
     <div class="protfolio-nav-header">
         <img class="logo" src="images\lucia-logo.png">
+
+        <!-- Combo de selección de idioma -->
+        <div class="language-select">
+            <select class="language-select-option" id="language" onchange="changeLanguage(this.value)">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <!-- Agrega más opciones de idioma según sea necesario -->
+            </select>
+        </div>
     </div>
 
     <img src="images\banner.png" style="width:100%">
+
+
 
 
     <div class="portfolio-container">
@@ -27,13 +38,13 @@
                 <img src="images\1-portfolio-invitacion.png" class="portfolio-image">
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center portfolio-detalle">
-                <img src="images\2-portfolio-velagaby.png" class="portfolio-image" >
+                <img src="images\2-portfolio-velagaby.png" class="portfolio-image">
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center portfolio-detalle">
                 <img src="images\7-bach-logo.jpg" class="portfolio-image">
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center portfolio-detalle">
-            <img src="images\9-mesa-dulce.jpg" class="portfolio-image">
+                <img src="images\9-mesa-dulce.jpg" class="portfolio-image">
 
             </div>
         </div>
@@ -44,7 +55,7 @@
                 <img src="images\5-asset-8.png" class="portfolio-image">
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center portfolio-detalle">
-                
+
                 <img src="images\4-portfolio-tag-yajo.png" class="portfolio-image">
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center portfolio-detalle">
@@ -58,31 +69,33 @@
     </div>
 
 
-
-
-
     <footer class="footer">
         <div class="portfolio-footer">
             <div class="row text-left">
                 <div class="col-md-5 col-6">
                     <div class="portfolio-footer-getintouch">
-                        <label><b>¿Listo para crear algo increíble?</b></label> <br>
-                        <button onclick="window.location.href = 'mailto:destinatario@example.com';" type="button"
-                            class="btn btn-primary rounded-pill btn-sm text-white get-in-touch-button">Get in touch</button>
+                        <label><b id="get-in-touch-label">¿Listo para crear algo increíble?</b></label> <br>
+                        <button onclick="window.location.href = 'mailto:lucarlucci52@gmail.com';" type="button"
+                            class="btn btn-primary rounded-pill btn-sm text-white get-in-touch-button"
+                            id="get-in-touch-button">Get in
+                            touch</button>
                     </div>
                 </div>
-    
+
                 <div class="col-md-4 col-6">
                     <div class="portfolio-footer-otroslinks">
-                        <label><b>Otros links</b></label>
+                        <label><b id="other-links">Otros links</b></label>
                         <ul>
-                            <li><a href="https://carluccilucia.mercadoshops.com.ar/">Tienda Online</a></li>
-                            <li><a href="https://www.instagram.com/akrasiaok/">Instagram Akrasia</a></li>
-                            <li><a href="https://drive.google.com/drive/folders/1WW-IXwSPDZN20HaAArm3GWCpc3G8FCtx">Catálogo</a></li>
+                            <li><a href="https://carluccilucia.mercadoshops.com.ar/" id="tienda-online">Tienda
+                                    Online</a></li>
+                            <li><a href="https://www.instagram.com/akrasiaok/" id="instagram-akrasia">Instagram
+                                    Akrasia</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/1WW-IXwSPDZN20HaAArm3GWCpc3G8FCtx"
+                                    id="catalogo">Catálogo</a></li>
                         </ul>
                     </div>
                 </div>
-    
+
                 <div class="col-md-3 col-12">
                     <label style="margin-bottom: 16px"><b>Social Media</b></label>
                     <div class="row">
@@ -91,13 +104,13 @@
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
-    
+
                         <div class="col-4" style="text-align: center; font-size: 20px;">
                             <a href="https://api.whatsapp.com/message/YBNY2NUW3AH3F1?autoload=1&app_absent=0">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
-    
+
                         <div class="col-4" style="text-align: center; font-size: 20px;">
                             <a href="https://www.instagram.com/akrasiaok/">
                                 <i class="fab fa-instagram"></i>
@@ -106,14 +119,55 @@
                     </div>
                 </div>
             </div>
-    
+
             <hr>
             <p style="color:grey">Hecho por Lei.</p>
         </div>
     </footer>
 
+    <script>
+        function changeLanguage(language) {
+            if (language === 'en') {
+                translateToEnglish();
+            }
+
+            if (language === 'es') {
+                translateToSpanish();
+            }
+        }
+
+        function translateToEnglish() {
+            document.getElementById('get-in-touch-label').innerText = 'Ready to create something amazing?';
+            document.getElementById('get-in-touch-button').innerText = 'Get in touch';
+            document.getElementById('catalogo').innerText = 'Catalog';
+            document.getElementById('tienda-online').innerText = 'Online Shop';
+            document.getElementById('other-links').innerText = 'Other links';
 
 
+
+        }
+
+        function translateToSpanish() {
+            document.getElementById('get-in-touch-label').innerText = '¿Listo para crear algo increíble?';
+            document.getElementById('get-in-touch-button').innerText = 'Contactate';
+            document.getElementById('tienda-online').innerText = 'Tienda Online';
+            document.getElementById('catalogo').innerText = 'Catalogo';
+            document.getElementById('other-links').innerText = 'Otros links';
+
+
+
+        }
+
+        // Llama a translateToEnglish() después de que el DOM esté completamente cargado
+        document.addEventListener('DOMContentLoaded', function () {
+            translateToEnglish();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            translateToSpanish();
+        });
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
