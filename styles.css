@@ -190,3 +190,36 @@ body {
            right: 20px;
        }
    }
+
+
+   @keyframes show {
+       from {
+           opacity: 0;
+           scale: 60%;
+       }
+
+       to {
+           opacity: 1;
+           scale: 100%;
+       }
+   }
+
+   img {
+       view-timeline-name: --image;
+       view-timeline-axis: block;
+
+       animation-timeline: --image;
+       animation-name: show;
+
+       animation-range: entry 15% cover 25%;
+       animation-fill-mode: both;
+   }
+
+
+   @media screen and (max-width: 768px) {
+
+       .header-mobile {
+           height: 150px !important;
+           background-color: #FCF2F3;
+       }
+   }
