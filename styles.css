@@ -194,8 +194,8 @@ body {
 
    @keyframes show {
        from {
-           opacity: 0;
-           scale: 60%;
+           opacity: 0.4;
+           scale: 95%;
        }
 
        to {
@@ -211,7 +211,7 @@ body {
        animation-timeline: --image;
        animation-name: show;
 
-       animation-range: entry 15% cover 25%;
+       animation-range: entry 10% cover 25%;
        animation-fill-mode: both;
    }
 
