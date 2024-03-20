@@ -211,7 +211,7 @@ body {
        animation-timeline: --image;
        animation-name: show;
 
-       animation-range: entry 10% cover 25%;
+       animation-range: entry 5% cover 20%;
        animation-fill-mode: both;
    }
 
